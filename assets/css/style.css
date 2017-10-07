@@ -1,2 +1,28 @@
 h3 
-{color: ;}
+{color: #6187B2;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+p{color: #A4FFFF;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+body
+{background-color: #FFEAE4;}
+
+h1
+{color: #6187B2;
+text-align: center;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#game
+{background-color: #CC776F;
+padding: 20px;
+width: 200px;
+margin-left: 200px;}
+
+#cleo
+{padding-left: 20px;}

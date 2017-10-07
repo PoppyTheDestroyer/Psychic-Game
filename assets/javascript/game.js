@@ -19,7 +19,7 @@ var updateLetterToGuess = function() {
   };
 //Names and formats the letters already guessed
   var updateGuessedLetters = function() {
-    document.querySelector("#lets").innerHTML = "Your Guesses so far: " + guessedLetters.join(", ");
+    document.getElementById("lets").innerHTML = "Your Guesses so far: " + guessedLetters.join(", ");
   };
 //Game over reset
   var reset = function() {
@@ -36,7 +36,7 @@ var updateLetterToGuess = function() {
   updateGuessesLeft();
 
   document.onkeyup = function(event) {
-    guessesLeft--;
+    guessesLeft-=1;
   //var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 var userGuess = event.key.toLowerCase();
  
@@ -46,14 +46,14 @@ guessedLetters.push(userGuess);
 
         if (guessesLeft > 0){
             if (userGuess === letterToGuess){
-                wins++;
-                document.querySelector("#wins").innerHTML = "Wins: " + wins;
+                wins+=1;
+                document.getElementById("wins").innerHTML = "Wins: " + wins;
                 alert("You are psychic!");
                 reset();
             }
         }else if(guessesLeft === 0){
-            losses++;
-            document.querySelector("#losses").innerHTML = "Losses: " + losses;
+            losses+=1;
+            document.getElementById("losses").innerHTML = "Losses: " + losses;
             alert("Sorry, you've got a dumb ol' regualr brain.");
             reset();
         }
