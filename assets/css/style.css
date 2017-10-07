@@ -1,5 +1,5 @@
 h3 
-{color: #6187B2;
+{color: #A4FFFF;
 text-align: center;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -13,7 +13,7 @@ body
 {background-color: #FFEAE4;}
 
 h1
-{color: #6187B2;
+{color: #A4FFFF;
 text-align: center;
 font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -22,7 +22,22 @@ font-family: "Trebuchet MS", Helvetica, sans-serif;
 {background-color: #CC776F;
 padding: 20px;
 width: 200px;
-margin-left: 200px;}
+position: relative;
+bottom: 80px;
+left: 570px;
+border-radius: 25px;
+}
 
 #cleo
-{padding-left: 20px;}
+{margin-left: 80px;
+}
+
+#main
+{background-color: #CC776F;
+position: relative;
+width: 260px;
+left: 30px;
+top: 70px;
+padding: 10px;
+border-radius: 25px;
+}
