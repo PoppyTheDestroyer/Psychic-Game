@@ -54,7 +54,7 @@ guessedLetters.push(userGuess);
         }else if(guessesLeft === 0){
             losses+=1;
             document.getElementById("losses").innerHTML = "Losses: " + losses;
-            alert("Sorry, you've got a dumb ol' regualr brain.");
+            alert("Sorry, you've got a dumb ol' regular brain.");
             reset();
         }
 };
